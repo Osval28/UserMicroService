@@ -1,0 +1,25 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using UserService.Application.DTOs;
+using UserService.Application.Services;
+
+namespace UserService.Controllers
+{
+    [ApiController]
+    [Route("api/[controller]")]
+    public class UserController : ControllerBase
+    {
+        private readonly UserServices _userServices;
+
+        public UserController(UserServices userServices)
+        {
+            _userServices = userServices;
+        }
+
+        [HttpPost("register")]
+        public IActionResult Register(UserDTO userDTO)
+        {
+            var user = _userServices.CreateUser(userDTO);
+            return Created("", new { message = "User created successfully", id = user.Id });
+        }
+    }
+}
