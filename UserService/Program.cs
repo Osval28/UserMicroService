@@ -14,19 +14,15 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddCors(o => o.AddDefaultPolicy(p => p.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod()));
 
 builder.Services.AddScoped<UserRepository>();
-builder.Services.AddScoped<BusinessRepository>();
-builder.Services.AddScoped<InvitationCodeRepository>();
+
 
 builder.Services.AddScoped<CreateUserUseCase>();
 builder.Services.AddScoped<LoginUseCase>();
-builder.Services.AddScoped<CreateBusinessUseCase>();
-builder.Services.AddScoped<GenerateInvitationCodeUseCase>();
-builder.Services.AddScoped<JoinWithCodeUseCase>();
+
 
 builder.Services.AddScoped<UserServices>();
 builder.Services.AddScoped<AuthService>();
-builder.Services.AddScoped<BusinessService>();
-builder.Services.AddScoped<InvitationService>();
+
 
 builder.Services.AddScoped<JWTService>();
 

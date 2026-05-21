@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using UserService.Application.DTO_s;
 using UserService.Application.DTOs;
 using UserService.Application.Services;
 

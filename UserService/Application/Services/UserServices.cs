@@ -1,4 +1,5 @@
-﻿using UserService.Application.DTOs;
+﻿using UserService.Application.DTO_s;
+using UserService.Application.DTOs;
 using UserService.Application.UseCase;
 using UserService.Infrastructure;
 

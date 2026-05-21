@@ -1,6 +1,6 @@
 ﻿using UserService.Domain.Model;
 
-namespace UserService.Application.DTOs
+namespace UserService.Application.DTO_s
 {
     public class UserDTO
     {
