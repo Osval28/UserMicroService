@@ -1,6 +1,9 @@
 ﻿using RabbitMQ.Client;
+using RabbitMQ.Client.Events;
+using System.Text;
+using System.Text.Json;
+using UserService.Application.DTO_s;
 using UserService.Infrastructure.Repositories;
-
 public class AssignBusinessConsumer
 {
     private readonly UserRepository _userRepository;

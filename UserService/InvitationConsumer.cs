@@ -1,10 +1,9 @@
-﻿using BusinessMicroService.Infrastructure.Repositories;
-using RabbitMQ.Client;
+﻿using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System.Text;
 using System.Text.Json;
+using UserService.Infrastructure;
 using UserService.Infrastructure.Repositories;
-
 public class InvitationConsumer
 {
     private readonly InvitationRepository _invitationRepository;

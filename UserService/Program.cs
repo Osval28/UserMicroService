@@ -21,7 +21,8 @@ builder.Services.AddScoped<CreateUserUseCase>();
 builder.Services.AddScoped<LoginUseCase>();
 builder.Services.AddHostedService<InvitationConsumerHostedService>();
 builder.Services.AddHostedService<AssignBusinessConsumerHostedService>();
-
+builder.Services.AddScoped<InvitationRepository>();
+builder.Services.AddScoped<AssignBusinessUseCase>();
 
 builder.Services.AddScoped<UserServices>();
 builder.Services.AddScoped<AuthService>();
