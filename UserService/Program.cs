@@ -19,6 +19,8 @@ builder.Services.AddScoped<UserRepository>();
 
 builder.Services.AddScoped<CreateUserUseCase>();
 builder.Services.AddScoped<LoginUseCase>();
+builder.Services.AddHostedService<InvitationConsumerHostedService>();
+builder.Services.AddHostedService<AssignBusinessConsumerHostedService>();
 
 
 builder.Services.AddScoped<UserServices>();

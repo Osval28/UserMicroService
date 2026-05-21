@@ -9,7 +9,7 @@ namespace UserService.Infrastructure
 
         public DbSet<UserEntity> Users { get; set; }
         public DbSet<Role> Roles { get; set; }
-
+        public DbSet<InvitationCode> InvitationCodes { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
