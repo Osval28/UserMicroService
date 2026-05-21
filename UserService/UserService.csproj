@@ -17,11 +17,9 @@
 
   <ItemGroup>
     <Folder Include="Application\Exceptions\" />
-    <Folder Include="Application\UseCase\" />
     <Folder Include="Application\Services\" />
     <Folder Include="Domain\Model\" />
     <Folder Include="Infrastructure\Middleware\" />
-    <Folder Include="Infrastructure\Repositories\" />
   </ItemGroup>
 
 </Project>

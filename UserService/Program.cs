@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using UserService;
 using UserService.Application.Services;
 using UserService.Application.UseCase;
 using UserService.Infrastructure;

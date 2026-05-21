@@ -50,4 +50,26 @@ namespace UserService.Infrastructure
         public string Name { get; set; } = "";
     }
 
+    public class InvitationCode
+    {
+        public int Id { get; set; }
+        public string Code { get; set; } = "";     
+        public int BusinessId { get; set; }
+        public int RoleId { get; set; }            
+        public DateTime ExpiresAt { get; set; }   
+        public bool IsUsed { get; set; } = false;  
+        public int GetRoleId()
+        {
+            return RoleId;
+        }
+        public int GetBusinessId()
+        {
+            return BusinessId;
+        }
+        public string GetCode()
+        {
+            return Code;
+        }
+    }
+
 }

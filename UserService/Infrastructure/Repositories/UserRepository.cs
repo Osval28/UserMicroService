@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using UserService.Application.Exceptions;
-using UserService.Infrastructure;
 
 namespace UserService.Infrastructure.Repositories
 {
